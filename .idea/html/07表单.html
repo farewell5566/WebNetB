@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>07 表单</title>
+</head>
+<body>
+
+<h3>
+    表单就是 收集数据，然后提交。
+
+</h3>
+<!--form标签就是表单。-->
+
+<!--
+在表单中，一般设置都是用input 然后设置
+    <input>中设置各项属性
+    type = text password
+            radio checkbox  设置checked来进行默认勾选
+            通过value 设置 默认值的。
+            通过name进行绑定的，例如radio中设置name来二选一
+    <select>也就是下拉表。
+        <option>中进行多选一</options>
+    <select>
+
+    <textarea >设置多行文本输入框。cols和rows 设置能输入的值。
+    <input type = "reset">
+    <input type = "submit">
+    <input type = "file">
+    <input type = "hidden">这一栏是隐藏的可以埋藏一些信息
+-->
+
+
+
+<form>
+    名字：<input type="text" value="xingchen"/> <br/>
+    密码：<input type="password" value="aaa"/> <br/>
+    确认密码：<input type="password" value="aaa"/> <br/>
+    选择性别：<input type="radio" name="sex" checked="checked">男 <input type="radio" name="sex">女 <br/>
+    选择爱好：<input type="checkbox" checked="checked"/>java <input type="checkbox">C++ <input type="checkbox"/>php <br/>
+    国籍：
+    <select>
+        <option>请选择国籍</option>
+        <option >中国</option>
+        <option>美国</option>
+        <option>日本</option>
+        <option>加拿大</option>
+    </select><br/>
+    请进行自我表述：<textarea cols="10" rows="10"> 这里才放默认值的</textarea><br/>
+    <input type="reset"  value="这个是重置"><br/>
+    <input type="submit"><br/>
+    <input type="file" value="请选择文件">
+    <input type="hidden" value="你看不到我" >
+
+
+
+</form>
+
+
+</body>
+</html>

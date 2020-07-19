@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>07 表单</title>
+</head>
+<body>
+
+<h3 align="center">
+    表单提交的三个条件：<br/>
+        1.表单项中属性没有name属性
+        2.单选项、多选项、下拉表单中（select中），传过去on是因为，没有设置属性value
+        3.表单项必须在form表单中。
+
+    Get请求的特点是：
+        1.地址栏是  action属性 + ？+ 发送参数（按照key-value表示）name=value&name=value
+        2.不安全
+        3. 传递字符必须在100以内。
+    Post请求的特点：
+        1.浏览器只有action属性
+        2.相对于get请求比较安全
+        3.没有字符大小的限制。
+
+</h3>
+<!--form标签就是表单。-->
+
+<!--
+
+-->
+
+
+<form action="localhost" method="get">
+    <table align="center">
+
+        <tr>
+            <td>名字：</td>
+            <td><input type="text" value="xingchen" name="名字"/></td>
+        </tr>
+        <tr>
+            <td>密码：</td>
+            <td><input type="password" value="aaa" name="password"/> <br/></td>
+        </tr>
+        <tr>
+            <td>确认密码：</td>
+            <td><input type="password" value="aaa"/> <br/></td>
+        </tr>
+        <tr>
+            <td>选择性别：</td>
+            <td><input type="radio" name="sex" value="男" checked="checked">男 <input type="radio" name="sex">女 <br/></td>
+        </tr>
+        <tr>
+            <td>选择爱好：</td>
+            <td >
+                <input type="checkbox" checked="checked" name="hobby" value="java"/>java
+                <input type="checkbox" name="hobby" value="C++">C++
+                <input type="checkbox" name="hobby" value="php"/>php
+            </td>
+        </tr>
+        <tr>
+            <td>国籍：</td>
+            <td>
+                <select name="country">
+                    <option  value="none" >请选择国籍</option>
+                    <option  value="CN" selected="selected">中国</option>
+                    <option  value="USA">美国</option>
+                    <option  value="Japan">日本</option>
+                    <option value="no">加拿大</option>
+                </select><br/>
+            </td>
+        </tr>
+        <tr>
+            <td>请进行自我表述：</td>
+            <td>
+                <textarea name="textArea" value="不知道" cols="10" rows="10"> 这里才放默认值的</textarea>
+                <br/>
+            </td>
+        </tr>
+        <tr>
+            <td><input type="reset" value="这个是重置"><br/></td>
+            <td><input type="submit"><br/></td>
+        </tr>
+<!--        <tr>
+            <td><input type="file" value="请选择文件"></td>
+            <td>  <input type="hidden" value="你看不到我"></td>
+        </tr>-->
+    </table>
+
+
+</form>
+
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" >
+
+        fun1 = function f() {
+            alert("onload的静态写法");
+        }
+
+        window.onload=function (ev) { alert("对，这就是动态加载") }
+
+    </script>
+</head>
+<body >
+
+
+<h3>静态标签注册onload</h3>
+
+onload静态写法就是在 添加 onload属性
+onload="fun1()"
+动态加载
+    在JS中写，windows.onload=function (){}
+
+
+</body>
+</html>

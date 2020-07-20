@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" >
+
+        var fun1 =function(){
+            alert("这是onsubmit的静态加载");
+            return false;
+        }
+
+        window.onload=function() {
+            //通过标签id获取对象
+            var element2 = document.getElementById("form01");
+            //alert(typeof (element2));
+            //将对象赋予方法
+            element2.onsubmit=function (e1) { alert("这是form的动态加载");
+            return false;
+            }
+
+        }
+
+    </script>
+</head>
+<body >
+
+
+<h3>onsubmit</h3>
+
+<form action="http:localhost" method="get" onsubmit="return fun1()">
+    <input type="submit"  value="btn1"></input>
+</form>
+
+<form id="form01" action="http:localhost" method="get">
+    <input type="submit" value="btn2"></input>
+</form>
+
+
+
+</body>
+</html>

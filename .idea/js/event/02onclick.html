@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" >
+
+        var fun1 =function(){
+            alert("这是btn的静态加载")
+        }
+
+        window.onload=function() {
+            //通过标签id获取对象
+            var element2 = document.getElementById("btn2");
+            //alert(typeof (element2));
+            //将对象赋予方法
+            element2.onclick=function (e1) { alert("这是btn的动态加载"); }
+        }
+
+    </script>
+</head>
+<body >
+
+
+<h3>注册onclick</h3>
+
+<button onclick="fun1()">按钮1</button>
+<button id="btn2">按钮2</button>
+
+
+</body>
+</html>

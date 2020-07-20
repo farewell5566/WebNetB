@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" >
+
+        var fun1 =function(){
+            alert("这是onchange的静态加载")
+        }
+
+        window.onload=function() {
+            //通过标签id获取对象
+            var element2 = document.getElementById("id01");
+            //alert(typeof (element2));
+            //将对象赋予方法
+            element2.onchange=function (e1) { alert("这是select的动态加载"); }
+        }
+
+    </script>
+</head>
+<body >
+
+
+<h3>onchange</h3>
+
+onchange 一样只不是使用与 selection
+
+<select onchange="fun1()">
+    <option>---女神---</option>
+    <option>小红</option>
+    <option>小桃子</option>
+    <option>小小</option>
+</select>
+
+<select id="id01">
+    <option>---男神---</option>
+    <option>我</option>
+    <option>你</option>
+    <option>他</option>
+</select>
+
+
+
+</body>
+</html>

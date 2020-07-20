@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>03JS</title>
+
+    <script type="text/javascript" >
+
+        var fun2 = function(a,b){
+            alert(arguments.length);
+            var sum = 0;
+            for (var i = 0; i < arguments.length; i++) {
+                sum+=arguments[i];
+            }
+            return sum;
+        }
+
+        alert(fun2(1,2,3,4,"i",6,7,8,9));
+
+    </script>
+
+
+</head>
+<body>
+
+<h3>
+
+
+    function的变量参数是假的，是动态的。
+    可以用argument.length和argument[0]/argument[1]来取值使用。
+
+</h3>
+
+</body>
+</html>

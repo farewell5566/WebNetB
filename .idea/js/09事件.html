@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>07定义对象</title>
+
+    <script type="text/javascript" >
+        var obj = {
+            name:"小名",
+            age:18,
+            fun1:function () {
+                alert(this.name+"的年龄是"+this.age)
+            }
+        }
+        obj.fun1();
+
+    </script>
+
+
+</head>
+<body>
+
+<h3>
+事件的注册分为：静态注册和动态注册。
+
+方法一：通过html标签的事件属性直接赋予事件响应后的代码，为静态注册。
+方法二：通过JS代码得到标签dom对象，通过dom对象.事件名 = function(){} 赋予事件响应后的代码，叫做动态注册。
+    动态注册步骤：
+        1.获取标签对象
+        2.标签对象.事件名= function();
+
+
+</h3>
+
+</body>
+</html>

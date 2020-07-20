@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" >
+
+        var fun1 =function(){
+            alert("这是onblur的静态加载")
+        }
+
+        window.onload=function() {
+            //通过标签id获取对象
+            var element2 = document.getElementById("id01");
+            //alert(typeof (element2));
+            //将对象赋予方法
+            element2.onblur=function (e1) { alert("这是btn的动态加载"); }
+        }
+
+    </script>
+</head>
+<body >
+
+
+<h3>onblur失去焦点事件</h3>
+
+
+账号：<input type="text" onblur="fun1()">
+密码：<input type="password" id="id01">
+nicai1：<input type="text" >
+
+</body>
+</html>

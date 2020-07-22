@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" >
+
+         function checkall(){
+            var arr = document.getElementsByTagName("input");
+             for (var i = 0; i < arr.length; i++) {
+                arr[i].checked=true;
+             }
+        }
+
+         function checkNone(){
+             var arr = document.getElementsByTagName("input");
+             for (var i = 0; i < arr.length; i++) {
+                 arr[i].checked=false;
+             }
+         }
+
+
+    </script>
+</head>
+<body >
+
+
+<h3>getElementByName</h3>
+
+java<input  type="checkbox" name="hobby" value="java" />
+php<input  type="checkbox" name="hobby" value="php" />
+C++<input  type="checkbox" name="hobby" value="C++" /><br/>
+
+<button onclick="checkall()">全选</button>
+<button onclick="checkNone()">全选</button>
+
+
+</body>
+</html>

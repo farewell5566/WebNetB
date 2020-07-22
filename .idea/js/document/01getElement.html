@@ -6,7 +6,20 @@
     <script type="text/javascript" >
 
         fun1 = function f() {
-            alert("onload的静态写法");
+            var element = document.getElementById("input01");
+            var spanInner = document.getElementById("spanValue");
+            var value = element.value;
+            alert("输入的值"+value);
+            var pattern = /^\w{3,5}$/;
+            if (pattern.test(value)){
+                //alert("符合条件");
+                spanInner.innerHTML="符合条件";
+            }else {
+                //alert("不符合条件");
+                spanInner.innerHTML="不符合条件";
+
+            }
+
         }
 
         window.onload=function (ev) {
@@ -22,7 +35,7 @@
 
 <h3>DOM的例子 验证输入账号满足5-12位的信息</h3>
 
-账号 <input type="text" id="input01" />
+账号 <input type="text" id="input01" /><span id="spanValue" ></span>
 <button onclick="fun1()">确定</button>
 
 

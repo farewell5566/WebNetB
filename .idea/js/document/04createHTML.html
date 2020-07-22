@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" >
+
+        window.onload=function (ev) {
+
+
+            //  方法1
+            var obj01 = document.createTextNode("我在这里");
+            document.body.appendChild(obj01);
+
+            //方法2
+            var obj02 = document.createElement("div");
+            var text = document.createTextNode("是呀");
+            obj02.appendChild( text) ;
+            document.body.appendChild(obj02);
+            //方法3
+            var obj3 = document.createElement("div");
+            obj3.innerHTML="xxxx";
+            document.body.appendChild(obj3);
+
+
+
+            var divA = document.createElement("div");
+            divA.innerHTML="hahhahh1";
+            document.body.appendChild(divA);
+
+
+
+        }
+
+
+    </script>
+</head>
+<body >
+
+
+<h3>Create</h3>
+
+
+
+</body>
+</html>

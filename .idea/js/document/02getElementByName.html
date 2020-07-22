@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" >
+
+         function checkall(){
+            var arr = document.getElementsByName("hobby");
+             for (var i = 0; i < arr.length; i++) {
+                arr[i].checked=true;
+             }
+        }
+
+
+        function  checknone(){
+            var arr = document.getElementsByName("hobby");
+            for (var i = 0; i < arr.length; i++) {
+                arr[i].checked=false;
+            }
+
+        }
+
+        function checkReverse(){
+            var arr = document.getElementsByName("hobby");
+            for (var i = 0; i < arr.length; i++) {
+                arr[i].checked=!arr[i].checked;
+            }
+
+        }
+
+
+    </script>
+</head>
+<body >
+
+
+<h3>getElementByName</h3>
+
+java<input  type="checkbox" name="hobby" value="java" />
+php<input  type="checkbox" name="hobby" value="php" />
+C++<input  type="checkbox" name="hobby" value="C++" /><br/>
+
+<button onclick="checkall()">全选</button>
+<button onclick="checknone()">全空</button>
+<button onclick="checkReverse()">反选</button>
+
+</body>
+</html>

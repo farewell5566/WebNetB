@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/03JQuery/03JQuery.iml" filepath="$PROJECT_DIR$/03JQuery/03JQuery.iml" />
+      <module fileurl="file://$PROJECT_DIR$/04web/04web.iml" filepath="$PROJECT_DIR$/04web/04web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/06servlet/06servlet.iml" filepath="$PROJECT_DIR$/06servlet/06servlet.iml" />
       <module fileurl="file://$PROJECT_DIR$/WebNetB.iml" filepath="$PROJECT_DIR$/WebNetB.iml" />
     </modules>
   </component>
